@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+			<title>Sorteo Expocicion</title>
+				<script languaje="javascript" type="text/javascript"> 
+					function mostrar()
+					{
+					var a=1;
+					var b=6;
+					var rango=b-a;
+					var aleatorio=Math.random()*rango;
+					aleatorio=Math.round(aleatorio)+a;
+					document.getElementById('visualizar').innerHTML="<br>El tema de Expocicion es:"+aleatorio;
+					}
+	
+				</script>
+</head> 
+	<body>
+			<div id="visualizar">
+				<input type="button"  onclick="mostrar()" value="Mostrar" />
+			</div>
+	</body>
+</html>
